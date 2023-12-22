@@ -88,6 +88,10 @@ header {
     color: brown;
 }
 
+.dropdown_menu.open{
+    height: 240px;
+}
+
 .dropdown_menu {
     display: none;
     position: absolute;
@@ -113,4 +117,16 @@ header {
     justify-content: center;
 }
 
-@media(max-width:992px) {}
+@media(max-width:992px) {
+.navbar .link,
+.navbar .action_btn{
+    display: none;
+}
+
+.navbar .toggle_btn{
+    display: block;
+}
+.dropdown_menu{
+    display: block;
+}
+}
