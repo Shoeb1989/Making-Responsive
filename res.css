@@ -74,6 +74,7 @@ header{
     font-size: 0.8rem;
     font-weight: bold;
     cursor: pointer;
+    transition: ;
 }
 
 
@@ -81,3 +82,9 @@ header{
     scale: 1.2;
     color: #885fc1;
 }
+
+.action_btn:active{
+    scale: 0.95;
+    color: brown;
+}
+
