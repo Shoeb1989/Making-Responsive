@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    <header>
     <div class="navbar">
         <div class="logo"><a href="#">Web Developer</a></div>
         <ul class="link">
@@ -26,21 +27,29 @@
         <div class="toogle_btn"></div>
         <i class="fa-solid fa-bars"></i>
 
-        <div class="dropdown_menu open">
+        <div class="dropdown_menu">
             <li><a href="Home">Home</a></li>
             <li><a href="About">About</a></li>
             <li><a href="Service">Service</a></li>
             <li><a href="Contact">Contact</a></li>
             <li><a href="" class="action_btn">Get Started</a></li>
         </div>
+     </header>   
 
     </div>
     <script>
         const toogleBtn = document.querySelector('.toggle_btn')
         const toogleBtnIcon = document.querySelector('.toggle_btn i')
-        const dropdownmenu = document.querySelector('.dropdown_menu')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
 
-        toogleBtn.onclick = function
+        toogleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toogleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
     </script>
 </body>
 
