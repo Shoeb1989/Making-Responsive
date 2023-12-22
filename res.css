@@ -64,8 +64,8 @@ header{
 }
 
 .action_btn{
-    background-color: orange;
-    color: #fff;
+    background-color: rgb(244, 234, 215);
+    color: #090909;
     padding: 0.5rem 1rem;
     border: none;
     outline: none;
@@ -75,4 +75,9 @@ header{
     font-weight: bold;
     cursor: pointer;
 }
-   
+
+
+.action_btn:hover{
+    scale: 1.2;
+    color: #885fc1;
+}
